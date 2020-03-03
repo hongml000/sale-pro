@@ -1,15 +1,19 @@
 // 左边栏宽度
 $aside-width = 150px;
+$label-width = 90px;
 
 /* 侧边栏样式 */
 .el-aside {
+  height: 100%;
   width: $aside-width !important;
   position: fixed;
   margin-top: 60px;
   font-size: 16px;
   .left-aside {
-    height: inherit;
+    height: 100%;
+
     .el-menu {
+      height: 100%;
       .el-menu-item {
         text-align: left;
       }
@@ -19,6 +23,7 @@ $aside-width = 150px;
 
 // 主体部分
 .el-main {
+  height: 100%;
   background: #f0f2f5;
   margin-left: $aside-width;
 }
@@ -32,24 +37,41 @@ $aside-width = 150px;
     padding-right: 24px;
     width: 30%;
   }
-  // .el-form-item__label {
-  //   // line-height: 32px;
-  // }
+  .el-form-item:nth-child(3) {
+    padding-right: 0;
+  }
+  .el-form-item__label {
+    line-height: 32px;
+    padding: 0;
+  }
   .el-form-item__content {
-    width: calc(100% - 100px);
-    // line-height: 32px;
-    // .el-input__inner {
-    //   height:32px;
-    // }
+    width: calc(100% - 90px);
+    line-height: 32px;
+    .el-input__inner {
+      height:32px;
+    }
   }    
   .form-button-item {
-    position: relative;
-    display: block;
     text-align:right;
-    width: 100%;
     padding-right: 24px;
+    margin-bottom:0;
   }
 
+}
+
+// 表格样式
+
+.el-table  {
+  .thread {
+    background: #f0f2f5;
+    tr {
+      
+    }
+  }
+}
+.el-table th {
+  background: #f0f2f5;
+  color: #333;
 }
 
 
