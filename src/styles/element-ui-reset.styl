@@ -1,0 +1,61 @@
+// 左边栏宽度
+$aside-width = 150px;
+
+/* 侧边栏样式 */
+.el-aside {
+  width: $aside-width !important;
+  position: fixed;
+  margin-top: 60px;
+  font-size: 16px;
+  .left-aside {
+    height: inherit;
+    .el-menu {
+      .el-menu-item {
+        text-align: left;
+      }
+    }
+  }
+}
+
+// 主体部分
+.el-main {
+  background: #f0f2f5;
+  margin-left: $aside-width;
+}
+
+// 表单样式
+.search-form {
+  margin-bottom: 20px;
+  .el-form-item {
+    // margin-bottom: 24px;
+    margin-right: 0;
+    padding-right: 24px;
+    width: 30%;
+  }
+  // .el-form-item__label {
+  //   // line-height: 32px;
+  // }
+  .el-form-item__content {
+    width: calc(100% - 100px);
+    // line-height: 32px;
+    // .el-input__inner {
+    //   height:32px;
+    // }
+  }    
+  .form-button-item {
+    position: relative;
+    display: block;
+    text-align:right;
+    width: 100%;
+    padding-right: 24px;
+  }
+
+}
+
+
+// 按钮
+.el-button {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 20px;
+}
